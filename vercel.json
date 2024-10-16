@@ -1,19 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/**/*.ts",
-        "use": "@vercel/node",
-        "config":{
-          "outputDirectory": "dist"
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "dist/server.js"
-      }
-    ]
+    { "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/dist" }] }
   }
   
