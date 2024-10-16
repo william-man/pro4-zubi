@@ -1,0 +1,36 @@
+{
+  "name": "pro04_backend_jack_khalos_william",
+  "version": "1.0.0",
+  "main": "./src/server.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "server": "npx tsx watch ./src/server.ts",
+    "runfile": "npx nodemon --exec tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "husky": "^9.1.6",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.21.1"
+  }
+}
